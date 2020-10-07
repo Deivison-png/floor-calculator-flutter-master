@@ -67,8 +67,9 @@ class _CalculatorPageState extends State<CalculatorPage> {
             onSaved: _controller.setFloorPrice,
           ),
 
-          _buildVerticalSpace(height: 40),
+          _buildVerticalSpace(height: 30),
           _buildCalculateButton(),
+
           _buildVerticalSpace(),
           _buildClearButton(),
         ],
@@ -117,7 +118,7 @@ class _CalculatorPageState extends State<CalculatorPage> {
     );
   }
 
-  _buildVerticalSpace({double height = 20.0}) {
+  _buildVerticalSpace({double height = 15.0}) {
     return SizedBox(height: height);
   }
 
