@@ -8,7 +8,7 @@ void main() {
     controller.setRoomLength('3.22');
     controller.setFloorWidth('0.6');
     controller.setFloorLength('0.6');
-    controller.setFloorPrice('2.20');
+    controller.setFloorPrice('30');
 
     final result = controller.calculate();
 
@@ -33,7 +33,7 @@ void main() {
     });
 
     test("Preço Do Total De Pisos", () {
-      expect(result.priceTotalFloor, 0.00);
+      expect(result.priceTotalFloor, 180.0);
     });
   });
 }
